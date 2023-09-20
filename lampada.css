@@ -1,0 +1,176 @@
+body {
+    background: radial-gradient(circle, #557eee, #000000);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+  }
+
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+
+
+  
+
+
+
+
+header,
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+button {
+    width: 120px;
+    
+}
+
+
+
+.botoes{
+
+    display: flex;
+     gap: 30px;
+}
+
+
+main{
+    margin-top: 8%;
+    background-color: transparent;
+ 
+}
+
+
+
+
+#lamp{
+    filter: brightness(2); 
+    animation: up-down 5s ease-in-out infinite;
+    background-color: transparent;
+}
+#lamp:hover{
+        cursor: pointer;
+}
+
+
+@keyframes up-down {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, -40px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+
+  #turnOn{
+
+    background-color: black;
+    padding: -5px;
+    color: rgb(0, 255, 0);
+    border: solid 1px rgb(107, 105, 105);
+    padding: 4px;
+    box-shadow: 2px 2px 5px #888888;
+    filter: brightness(2); 
+    animation: pulse 10s infinite;
+    
+  }
+
+  #turnOn:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 18px #888888;
+    
+  }
+
+
+  #turnOff{
+    background-color: black;
+    padding: -5px;
+    color: rgb(255, 0, 0);
+    border: solid 1px rgb(107, 105, 105);
+    box-shadow: 2px 2px 5px #888888;
+    filter: brightness(2); 
+    animation: pulse 10s infinite;
+
+  }
+  #turnOff:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 18px #888888;
+    
+  }
+  
+
+  #consertar{
+
+    background-color: black;
+    padding: -5px;
+    color: goldenrod;
+    border: solid 1px rgb(107, 105, 105);
+    box-shadow: 2px 2px 5px #888888;
+    filter: brightness(2); 
+    animation: pulse 10s infinite;
+    
+    
+   
+  }
+
+  #consertar:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 18px #888888;
+    
+  }
+ 
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.06);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+  .pcgamer{
+    width: 660px;
+    position: absolute;
+    left: 24%;
+    z-index: -8;
+    opacity: 0.5;
+  }
+
+
+
+ 
+  
+  .music-box audio {
+    top: 25px;
+    left: 3%;
+    position: absolute;
+    width: 150px;
+   
+  }
+  
+
+ 
